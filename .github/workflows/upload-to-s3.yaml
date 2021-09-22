@@ -7,6 +7,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: prod
+      url: https://testvbtr.s3.us-east-2.amazonaws.com
     steps:
     - name: Checkout
       uses: actions/checkout@v1
